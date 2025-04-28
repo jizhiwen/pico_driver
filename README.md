@@ -20,7 +20,8 @@ ros2 run pico_driver monitor
 
 ## Run
 ```bash
-source  ~/src/ros2_ws/install/setup.bash
+cd ~/src/ros2_ws
+source  install/setup.bash
 ros2 run pico_driver monitor
 ```
 
@@ -28,5 +29,7 @@ ros2 run pico_driver monitor
 ```json
 [{"position": {"x": 0, "y": 0, "z": 0}, "rotation": {"w": 0, "x": 3.141592653589793, "y": 0, "z": 0}, "axisClick": "false", "axisX": 0, "axisY": 0, "indexTrig": 0, "handTrig": false, "keyOne": "false", "keyTwo": "false", "ts": 1745830113268}, {"position": {"x": 0, "y": 0, "z": 0}, "rotation": {"w": 0, "x": 3.141592653589793, "y": 0, "z": 0}, "axisClick": "false", "axisX": 0, "axisY": 0, "indexTrig": 0, "handTrig": false, "keyOne": "false", "keyTwo": "false", "ts": 1745830113285}]
 ```
+
+The State of left and right controller are in Array[0] and Array[1] respectively.
 
 ![](./images/image.png)
